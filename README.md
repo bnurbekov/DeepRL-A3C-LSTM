@@ -1,3 +1,7 @@
+### Dependencies
+
+Vizdoom: https://github.com/Marqt/ViZDoom.
+
 ### Environment
 
 I was not able to make ppaquette_gym_doom work on my machine. Thus, in the interests of time I implemented lightweight gym-like interface for Vizdoom (which is slightly different from OpenAI Gym's interface).

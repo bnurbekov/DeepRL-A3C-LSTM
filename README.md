@@ -6,7 +6,7 @@ I was not able to make ppaquette_gym_doom work on my machine. Thus, in the inter
 
 A2C (Advantage Actor - Critic) + LSTM.
 
-Main point of reference: https://arxiv.org/pdf/1609.05521v1.pdf
+Main point of reference: https://arxiv.org/pdf/1609.05521v1.pdf.
 
 ### Further improvements
 

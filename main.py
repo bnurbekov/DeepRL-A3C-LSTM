@@ -1,22 +1,26 @@
-from model import build_graph
+import tensorflow as tf
+
+from a3c import A3C_graph
 from environment import Environment
 
-SKIP_TRAINING = True
+SKIP_TRAINING = False
 
-def train(session, graph_ops, saver):
-	with tf.Session() as session:
+def train(g):
+	with tf.Session(graph = g.graph) as session:
+		# Define training
 
-def evaluate(session, graph_ops, saver):
+def evaluate(g):
+	with tf.Session(graph = g.graph) as session:
+		# Define evaluation
 
-def main():
-	graph_ops = build_graph()
-
-	saver = tf.train.Saver()
+def main(_):
+	# Building graph:
+	graph_ops = A3C_graph_ops()
 
 	if not SKIP_TRAINING:
-		train(session, graph_ops, saver)
+		train(graph_ops)
 
-	evaluate(session, graph_ops, saver)
+	evaluate(graph_ops)
 		
 
 if __name__ == "__main__":
